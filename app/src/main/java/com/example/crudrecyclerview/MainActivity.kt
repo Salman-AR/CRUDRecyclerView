@@ -54,12 +54,13 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Pilih Jenis Kelamin",Toast.LENGTH_LONG).show()
             }else{
                 data.add(siswa)
+                inputNIS.setText("")
+                inputNama.setText("")
+                val rGroup = findViewById<RadioGroup>(R.id.radioGroup)
+                rGroup.clearCheck()
             }
             recyclerAdapter.notifyDataSetChanged()
-            inputNIS.setText("")
-            inputNama.setText("")
-            val rGroup = findViewById<RadioGroup>(R.id.radioGroup)
-            rGroup.clearCheck()
+
         }
     }
 }
