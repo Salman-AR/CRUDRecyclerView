@@ -50,8 +50,8 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this,"Masukan NIS",Toast.LENGTH_LONG).show()
             }else if (nama.isNullOrEmpty()){
                 Toast.makeText(this,"Masukan Nama",Toast.LENGTH_LONG).show()
-            }else if (jekel.isNullOrEmpty()){
-                Toast.makeText(this,"Pilih Jenis Kelamin",Toast.LENGTH_LONG).show()
+//            }else if (jekel.isNullOrEmpty()){
+//                Toast.makeText(this,"Pilih Jenis Kelamin",Toast.LENGTH_LONG).show()
             }else{
                 data.add(siswa)
                 inputNIS.setText("")

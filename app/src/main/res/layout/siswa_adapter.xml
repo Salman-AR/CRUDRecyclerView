@@ -61,7 +61,8 @@
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:backgroundTint="#5868FD"
-                    android:text="Edit" />
+                    android:text="Edit"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <Button
                     android:id="@+id/btnHapus"
@@ -69,7 +70,8 @@
                     android:layout_height="40dp"
                     android:backgroundTint="#E1DF2A2A"
                     android:text="Hapus"
-                    android:textColor="#FFFFFF" />
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
