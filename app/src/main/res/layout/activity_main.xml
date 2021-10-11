@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtInputNIS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="NIS"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtInputNama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nama Lengkap"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/txtInputNIS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtInputNIS"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Jenis Kelamin"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@+id/txtInputNIS"
+        app:layout_constraintTop_toBottomOf="@+id/txtInputNIS" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/txtInputNama"
+        app:layout_constraintStart_toStartOf="@+id/txtInputNama"
+        app:layout_constraintTop_toTopOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/rbLakiLaki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki Laki" />
+
+        <RadioButton
+            android:id="@+id/rbPerempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listData"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTambah" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
